@@ -1,0 +1,25 @@
+[gd_scene load_steps=5 format=3 uid="uid://d1428tnvysgpn"]
+
+[ext_resource type="Script" path="res://Entities/Object/coin.gd" id="1_j4xpx"]
+[ext_resource type="Shader" path="res://spatial/basic_opaque.gdshader" id="1_tuib0"]
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_snymk"]
+height = 0.2
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_lgaqt"]
+render_priority = 0
+shader = ExtResource("1_tuib0")
+shader_parameter/albedo_color = Color(1, 1, 0, 1)
+shader_parameter/cull_distance_override = 0.0
+
+[node name="Coin" type="Area3D"]
+script = ExtResource("1_j4xpx")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0)
+shape = SubResource("CylinderShape3D_snymk")
+
+[node name="CSGCylinder3D" type="CSGCylinder3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0)
+height = 0.2
+material = SubResource("ShaderMaterial_lgaqt")

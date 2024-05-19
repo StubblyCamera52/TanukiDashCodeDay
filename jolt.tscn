@@ -1,0 +1,178 @@
+[gd_scene load_steps=14 format=3 uid="uid://dlrdyy0xi3xfi"]
+
+[ext_resource type="PackedScene" uid="uid://c5xlbtf0yljl8" path="res://Assets/Meshes/jolt.glb" id="1_dqm34"]
+[ext_resource type="Shader" path="res://spatial/standard_opaque.gdshader" id="2_do78d"]
+[ext_resource type="Texture2D" uid="uid://caap81fh0mqcp" path="res://Assets/Meshes/jolt_jolp.png" id="3_re4rg"]
+[ext_resource type="Shader" path="res://spatial/standard_transparent.gdshader" id="4_jk7oa"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_thg4g"]
+render_priority = 0
+shader = ExtResource("2_do78d")
+shader_parameter/albedo_color = Color(1, 1, 1, 1)
+shader_parameter/albedo_texture_as_primary_color = true
+shader_parameter/mix_factor = 1.0
+shader_parameter/uv_offset = Vector2(0, 0)
+shader_parameter/uv_scale = Vector2(1, 1)
+shader_parameter/uv_scroll_speed = Vector2(0, 0)
+shader_parameter/cull_distance_override = 0.0
+shader_parameter/albedo_texture = ExtResource("3_re4rg")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_4iet5"]
+render_priority = 0
+shader = ExtResource("2_do78d")
+shader_parameter/albedo_color = Color(1, 1, 1, 1)
+shader_parameter/albedo_texture_as_primary_color = true
+shader_parameter/mix_factor = 1.0
+shader_parameter/uv_offset = Vector2(0, 0)
+shader_parameter/uv_scale = Vector2(1, 1)
+shader_parameter/uv_scroll_speed = Vector2(0, 0)
+shader_parameter/cull_distance_override = 0.0
+shader_parameter/albedo_texture = ExtResource("3_re4rg")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_h31kh"]
+render_priority = 0
+shader = ExtResource("2_do78d")
+shader_parameter/albedo_color = Color(1, 1, 1, 1)
+shader_parameter/albedo_texture_as_primary_color = true
+shader_parameter/mix_factor = 1.0
+shader_parameter/uv_offset = Vector2(0, 0)
+shader_parameter/uv_scale = Vector2(1, 1)
+shader_parameter/uv_scroll_speed = Vector2(0, 0)
+shader_parameter/cull_distance_override = 0.0
+shader_parameter/albedo_texture = ExtResource("3_re4rg")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_6gd15"]
+render_priority = 0
+shader = ExtResource("2_do78d")
+shader_parameter/albedo_color = Color(1, 1, 1, 1)
+shader_parameter/albedo_texture_as_primary_color = true
+shader_parameter/mix_factor = 1.0
+shader_parameter/uv_offset = Vector2(0, 0)
+shader_parameter/uv_scale = Vector2(1, 1)
+shader_parameter/uv_scroll_speed = Vector2(0, 0)
+shader_parameter/cull_distance_override = 0.0
+shader_parameter/albedo_texture = ExtResource("3_re4rg")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_s7s7f"]
+render_priority = 0
+shader = ExtResource("4_jk7oa")
+shader_parameter/albedo_color = Color(1, 1, 1, 1)
+shader_parameter/albedo_texture_as_primary_color = true
+shader_parameter/mix_factor = 1.0
+shader_parameter/uv_offset = Vector2(0, 0)
+shader_parameter/uv_scale = Vector2(1, 1)
+shader_parameter/uv_scroll_speed = Vector2(0, 0)
+shader_parameter/cull_distance_override = 0.0
+shader_parameter/albedo_texture = ExtResource("3_re4rg")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_gqxly"]
+render_priority = 0
+shader = ExtResource("2_do78d")
+shader_parameter/albedo_color = Color(1, 1, 1, 1)
+shader_parameter/albedo_texture_as_primary_color = true
+shader_parameter/mix_factor = 1.0
+shader_parameter/uv_offset = Vector2(0, 0)
+shader_parameter/uv_scale = Vector2(1, 1)
+shader_parameter/uv_scroll_speed = Vector2(0, 0)
+shader_parameter/cull_distance_override = 0.0
+shader_parameter/albedo_texture = ExtResource("3_re4rg")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_6yp45"]
+render_priority = 0
+shader = ExtResource("2_do78d")
+shader_parameter/albedo_color = Color(1, 1, 1, 1)
+shader_parameter/albedo_texture_as_primary_color = true
+shader_parameter/mix_factor = 1.0
+shader_parameter/uv_offset = Vector2(0, 0)
+shader_parameter/uv_scale = Vector2(1, 1)
+shader_parameter/uv_scroll_speed = Vector2(0, 0)
+shader_parameter/cull_distance_override = 0.0
+shader_parameter/albedo_texture = ExtResource("3_re4rg")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_4khn6"]
+render_priority = 0
+shader = ExtResource("4_jk7oa")
+shader_parameter/albedo_color = Color(1, 1, 1, 1)
+shader_parameter/albedo_texture_as_primary_color = true
+shader_parameter/mix_factor = 1.0
+shader_parameter/uv_offset = Vector2(0, 0)
+shader_parameter/uv_scale = Vector2(1, 1)
+shader_parameter/uv_scroll_speed = Vector2(0, 0)
+shader_parameter/cull_distance_override = 0.0
+shader_parameter/albedo_texture = ExtResource("3_re4rg")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_ib6vd"]
+render_priority = 0
+shader = ExtResource("2_do78d")
+shader_parameter/albedo_color = Color(1, 1, 1, 1)
+shader_parameter/albedo_texture_as_primary_color = true
+shader_parameter/mix_factor = 1.0
+shader_parameter/uv_offset = Vector2(0, 0)
+shader_parameter/uv_scale = Vector2(1, 1)
+shader_parameter/uv_scroll_speed = Vector2(0, 0)
+shader_parameter/cull_distance_override = 0.0
+shader_parameter/albedo_texture = ExtResource("3_re4rg")
+
+[node name="jolt" instance=ExtResource("1_dqm34")]
+
+[node name="Skeleton3D" parent="Armature" index="0"]
+bones/2/rotation = Quaternion(-6.09223e-08, -6.18995e-08, -0.704895, 0.709312)
+bones/5/rotation = Quaternion(-0.0836125, 0.102963, -0.772355, 0.621188)
+bones/7/rotation = Quaternion(-2.91624e-09, -1.87652e-07, -0.335736, 0.941956)
+bones/7/scale = Vector3(1, 1, 1)
+bones/8/rotation = Quaternion(-8.2962e-08, -3.69274e-08, 0.335736, 0.941956)
+bones/8/scale = Vector3(1, 1, 1)
+bones/9/rotation = Quaternion(-6.09223e-08, 6.18995e-08, 0.704895, 0.709312)
+bones/12/rotation = Quaternion(-0.0836125, -0.102963, 0.772355, 0.621188)
+bones/13/rotation = Quaternion(0.00170136, -0.0143202, 0.994833, -0.100498)
+bones/13/scale = Vector3(0.999998, 1, 1)
+bones/14/rotation = Quaternion(0.033243, -0.000222926, -0.0627455, 0.997476)
+bones/14/scale = Vector3(1, 1, 1)
+bones/15/rotation = Quaternion(0.23032, 0.014631, -0.0307696, 0.972518)
+bones/16/rotation = Quaternion(0.50899, 5.79108e-08, 0.0257003, 0.860389)
+bones/16/scale = Vector3(1, 1, 1)
+bones/17/rotation = Quaternion(-0.859152, -6.10019e-08, 1.02419e-07, 0.511721)
+bones/18/rotation = Quaternion(-0.0415582, -5.29201e-15, 9.90824e-09, 0.999136)
+bones/19/rotation = Quaternion(0.0104821, -1.2436e-14, -2.49913e-09, 0.999945)
+bones/20/rotation = Quaternion(-0.0340652, -5.35994e-15, 8.12179e-09, 0.99942)
+bones/20/scale = Vector3(1, 1, 1)
+bones/21/rotation = Quaternion(-0.0623444, 1.42107e-14, 1.48641e-08, 0.998055)
+bones/22/rotation = Quaternion(-0.00170136, -0.0143202, 0.994833, 0.100498)
+bones/22/scale = Vector3(0.999998, 1, 1)
+bones/23/rotation = Quaternion(0.033243, 0.000222926, 0.0627455, 0.997476)
+bones/23/scale = Vector3(1, 1, 1)
+bones/24/rotation = Quaternion(0.23032, -0.014631, 0.0307696, 0.972518)
+bones/25/rotation = Quaternion(0.50899, -5.79108e-08, -0.0257003, 0.860389)
+bones/25/scale = Vector3(1, 1, 1)
+
+[node name="Body" parent="Armature/Skeleton3D" index="0"]
+transform = Transform3D(1, 0.000192213, -1.45443e-06, -0.000192213, 1, 8.31693e-05, 1.45443e-06, -8.31693e-05, 1, 0, 0, 0)
+surface_material_override/0 = SubResource("ShaderMaterial_thg4g")
+
+[node name="Bow" parent="Armature/Skeleton3D" index="1"]
+surface_material_override/0 = SubResource("ShaderMaterial_4iet5")
+
+[node name="Cube" parent="Armature/Skeleton3D" index="2"]
+surface_material_override/0 = SubResource("ShaderMaterial_h31kh")
+
+[node name="Cube_001" parent="Armature/Skeleton3D" index="3"]
+surface_material_override/0 = SubResource("ShaderMaterial_6gd15")
+
+[node name="Eyes" parent="Armature/Skeleton3D" index="4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.0676641)
+surface_material_override/0 = SubResource("ShaderMaterial_s7s7f")
+
+[node name="Hat" parent="Armature/Skeleton3D" index="5"]
+surface_material_override/0 = SubResource("ShaderMaterial_gqxly")
+
+[node name="Head" parent="Armature/Skeleton3D" index="6"]
+surface_material_override/0 = SubResource("ShaderMaterial_6yp45")
+
+[node name="Mouth" parent="Armature/Skeleton3D" index="7"]
+surface_material_override/0 = SubResource("ShaderMaterial_4khn6")
+
+[node name="Shoes" parent="Armature/Skeleton3D" index="8"]
+surface_material_override/0 = SubResource("ShaderMaterial_ib6vd")
+
+[node name="AnimationPlayer" parent="." index="1"]
+playback_default_blend_time = 0.3

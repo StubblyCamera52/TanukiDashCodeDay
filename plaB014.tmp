@@ -1,0 +1,31 @@
+[gd_scene load_steps=5 format=3 uid="uid://ck4w1a7vkbklw"]
+
+[ext_resource type="Script" path="res://player.gd" id="1_7tyay"]
+[ext_resource type="PackedScene" uid="uid://dlrdyy0xi3xfi" path="res://jolt.tscn" id="2_d6f8s"]
+[ext_resource type="Script" path="res://PlayerCamera.gd" id="2_dfpli"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_g0al4"]
+size = Vector3(4.0564, 9.04077, 4.07983)
+
+[node name="Player" type="CharacterBody3D"]
+collision_layer = 2
+collision_mask = 3
+script = ExtResource("1_7tyay")
+MAXDEFAULTSPEED = 100.0
+WALKACCELERATION = 30.0
+JUMP_VELOCITY = 100.0
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4.58167, 0)
+shape = SubResource("BoxShape3D_g0al4")
+
+[node name="jolt" parent="." instance=ExtResource("2_d6f8s")]
+
+[node name="SpringArm3D" type="SpringArm3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 6.5, 0)
+spring_length = 20.0
+script = ExtResource("2_dfpli")
+controller_sensitivity = 0.05
+
+[node name="Camera3D" type="Camera3D" parent="SpringArm3D"]
+current = true

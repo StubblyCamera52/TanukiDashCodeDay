@@ -1,0 +1,38 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://c0b1k3wu824st"
+path.s3tc="res://.godot/imported/jolpbattlefield_10E99677_c.png-e170c12865fc5a29624d6a5786aeeba7.s3tc.ctex"
+metadata={
+"imported_formats": ["s3tc_bptc"],
+"vram_texture": true
+}
+generator_parameters={
+"md5": "00aba1c233b7b988a2b7db4ee7dd800e"
+}
+
+[deps]
+
+source_file="res://Assets/Meshes/jolpbattlefield_10E99677_c.png"
+dest_files=["res://.godot/imported/jolpbattlefield_10E99677_c.png-e170c12865fc5a29624d6a5786aeeba7.s3tc.ctex"]
+
+[params]
+
+compress/mode=2
+compress/high_quality=false
+compress/lossy_quality=0.7
+compress/hdr_compression=1
+compress/normal_map=0
+compress/channel_pack=0
+mipmaps/generate=true
+mipmaps/limit=-1
+roughness/mode=0
+roughness/src_normal=""
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/normal_map_invert_y=false
+process/hdr_as_srgb=false
+process/hdr_clamp_exposure=false
+process/size_limit=0
+detect_3d/compress_to=0

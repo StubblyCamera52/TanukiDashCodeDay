@@ -1,0 +1,49 @@
+[gd_scene load_steps=10 format=3 uid="uid://b2l6jfkewr2by"]
+
+[ext_resource type="PackedScene" uid="uid://ck4w1a7vkbklw" path="res://player.tscn" id="1_7avb2"]
+[ext_resource type="PackedScene" uid="uid://n2fwphyotkc2" path="res://jolpbattlefield.tscn" id="2_hjhki"]
+[ext_resource type="PackedScene" uid="uid://cp6g8ohe7vdsy" path="res://blender/testlevel.glb" id="3_t53pw"]
+[ext_resource type="PackedScene" uid="uid://bhe6245fxbbti" path="res://ingameUI.tscn" id="4_n428m"]
+[ext_resource type="PackedScene" uid="uid://c4cgwvh84vyti" path="res://Assets/Meshes/emeraldcoast.glb" id="5_hkkqt"]
+[ext_resource type="PackedScene" uid="uid://d1428tnvysgpn" path="res://Entities/Object/coin.tscn" id="6_87swv"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_h20nm"]
+sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
+ground_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
+
+[sub_resource type="Sky" id="Sky_nyhxe"]
+sky_material = SubResource("ProceduralSkyMaterial_h20nm")
+
+[sub_resource type="Environment" id="Environment_8wy2u"]
+background_mode = 2
+sky = SubResource("Sky_nyhxe")
+tonemap_mode = 2
+
+[node name="TestLevel" type="Node3D"]
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(-1, 5.32196e-08, -6.93572e-08, 9.82378e-09, 0.856736, 0.515756, 8.68691e-08, 0.515756, -0.856736, 0, 0, 0)
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_8wy2u")
+
+[node name="Player" parent="." instance=ExtResource("1_7avb2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 522.736, -82.4586, -75.2426)
+
+[node name="jolpbattlefield" parent="." instance=ExtResource("2_hjhki")]
+transform = Transform3D(2.5, 0, 0, 0, 2.5, 0, 0, 0, 2.5, 61.6208, -100.092, 481.071)
+
+[node name="testlevel" parent="." instance=ExtResource("3_t53pw")]
+transform = Transform3D(20, 0, 0, 0, 20, 0, 0, 0, 20, 165.981, -93.8879, -407.093)
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+layer = -1
+
+[node name="Control" parent="CanvasLayer" instance=ExtResource("4_n428m")]
+mouse_filter = 2
+
+[node name="emeraldcoast" parent="." instance=ExtResource("5_hkkqt")]
+transform = Transform3D(-2.18557e-06, 0, 50, 0, 50, 0, -50, 0, -2.18557e-06, -283.152, -91.6702, -886.938)
+
+[node name="Coin" parent="." instance=ExtResource("6_87swv")]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 605.989, -80.1775, -53.5268)

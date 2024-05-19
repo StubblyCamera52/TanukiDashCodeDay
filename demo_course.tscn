@@ -1,0 +1,38 @@
+[gd_scene load_steps=8 format=3 uid="uid://c5xdupc1srq3u"]
+
+[ext_resource type="PackedScene" uid="uid://ck4w1a7vkbklw" path="res://player.tscn" id="1_1dy8f"]
+[ext_resource type="Texture2D" uid="uid://cur1qduv8pbm2" path="res://Assets/Textures/skybox.png" id="1_l2yuj"]
+[ext_resource type="PackedScene" uid="uid://bhe6245fxbbti" path="res://ingameUI.tscn" id="2_n1vcl"]
+[ext_resource type="PackedScene" path="res://jolpcourse.tscn" id="3_k8um0"]
+
+[sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_o16rk"]
+panorama = ExtResource("1_l2yuj")
+
+[sub_resource type="Sky" id="Sky_nyhxe"]
+sky_material = SubResource("PanoramaSkyMaterial_o16rk")
+
+[sub_resource type="Environment" id="Environment_8wy2u"]
+background_mode = 2
+sky = SubResource("Sky_nyhxe")
+tonemap_mode = 2
+
+[node name="DemoCourse" type="Node3D"]
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(-1, 5.32196e-08, -6.93572e-08, 9.82378e-09, 0.856736, 0.515756, 8.68691e-08, 0.515756, -0.856736, 0, 0, 0)
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_8wy2u")
+
+[node name="Player" parent="." instance=ExtResource("1_1dy8f")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 533.41, -138.904, -34.3856)
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+layer = -1
+
+[node name="Control" parent="CanvasLayer" instance=ExtResource("2_n1vcl")]
+mouse_filter = 2
+metadata/_edit_use_anchors_ = true
+
+[node name="jolpcourse" parent="." instance=ExtResource("3_k8um0")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 511.52, -114.163, -104.435)

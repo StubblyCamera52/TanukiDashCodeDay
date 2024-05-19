@@ -1,0 +1,38 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://conp4u4bb832q"
+path.s3tc="res://.godot/imported/emeraldcoast_sea2_10.png-6cffb0cd7bd1628aac2b35193e0cee8e.s3tc.ctex"
+metadata={
+"imported_formats": ["s3tc_bptc"],
+"vram_texture": true
+}
+generator_parameters={
+"md5": "5db0c3e5573bee5f93b7fa4b7205a9ed"
+}
+
+[deps]
+
+source_file="res://Assets/Meshes/emeraldcoast_sea2_10.png"
+dest_files=["res://.godot/imported/emeraldcoast_sea2_10.png-6cffb0cd7bd1628aac2b35193e0cee8e.s3tc.ctex"]
+
+[params]
+
+compress/mode=2
+compress/high_quality=false
+compress/lossy_quality=0.7
+compress/hdr_compression=1
+compress/normal_map=0
+compress/channel_pack=0
+mipmaps/generate=true
+mipmaps/limit=-1
+roughness/mode=0
+roughness/src_normal=""
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/normal_map_invert_y=false
+process/hdr_as_srgb=false
+process/hdr_clamp_exposure=false
+process/size_limit=0
+detect_3d/compress_to=0
